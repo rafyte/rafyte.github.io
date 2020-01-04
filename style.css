@@ -1,7 +1,7 @@
 *,
 ::before,
 ::after {
-  background: transparent;
+  background: #fafaff;
   vertical-align: baseline;
   box-sizing: border-box;
   margin: 0;
@@ -10,18 +10,76 @@
   outline: 0;
   font-size: 100%;
   font: inherit;
+  font-family: 'Montserrat', sans-serif;
+  color: #333346;
 }
 
-header,
-nav {
-  display: flex;
-  justify-content: space-around;
+body {
+  padding: 0 20%;
 }
 
 header {
-  margin: 4%;
+  margin: 7% 0 5% 0;
+  display: flex;
 }
 
-.nav-tab {
-  margin: 10%;
+.external_links {
+  display: flex;
+  margin-bottom: 10%;
+}
+
+.external_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333346;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 2% 0 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 80%;
+  text-decoration: none;
+}
+
+.dribbble_link:hover {
+  border-color: #ea4c89;
+}
+
+.dribbble_link:hover p {
+  color: #ea4c89;
+}
+
+.linkedin_link:hover {
+  border-color: #2867b2;
+}
+
+.linkedin_link:hover p {
+  color: #2867b2;
+}
+
+.external_link_subtext {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.external_link img {
+  height: 1.5em;
+  margin-left: 2em;
+}
+
+.post {
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+
+.post_title {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.post_subtitle {
+  opacity: 0.4;
+  font-size: 0.9em;
 }
