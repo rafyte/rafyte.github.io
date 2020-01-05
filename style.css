@@ -75,7 +75,7 @@ header {
 }
 
 .post {
-  margin-bottom: 7%;
+  margin-bottom: 10vh;
   cursor: pointer;
   font-weight: 700;
 }
