@@ -14,6 +14,11 @@
   color: #333346;
 }
 
+::selection {
+  background: #333346;
+  color: #fafaff;
+}
+
 body {
   padding: 0 20%;
 }
@@ -70,16 +75,24 @@ header {
 }
 
 .post {
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .post_title {
-  font-weight: 700;
   font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.post_role {
+  background: #333346;
+  color: #fafaff;
+  padding: 2px 7px;
+  border-radius: 2px;
 }
 
 .post_subtitle {
   opacity: 0.4;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
