@@ -1,7 +1,6 @@
 *,
 ::before,
 ::after {
-  background: #fafaff;
   vertical-align: baseline;
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +10,6 @@
   font-size: 100%;
   font: inherit;
   font-family: 'Montserrat', sans-serif;
-  color: #333346;
 }
 
 ::selection {
@@ -20,6 +18,7 @@
 }
 
 body {
+  background: white;
   padding: 0 20%;
 }
 
@@ -28,7 +27,7 @@ header {
   display: flex;
 }
 
-.external_links {
+.external_links_container {
   display: flex;
   margin-bottom: 10%;
 }
@@ -37,30 +36,40 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #333346;
-  border-radius: 5px;
+  border: 1.5px solid #333346;
+  border-radius: 3px;
   padding: 10px;
   margin: 0 2% 0 0;
   cursor: pointer;
   font-weight: 700;
   font-size: 80%;
   text-decoration: none;
+  width: 20%;
 }
 
-.dribbble_link:hover {
-  border-color: #ea4c89;
+.external_link:visited {
+  color: #333346;
 }
 
-.dribbble_link:hover p {
-  color: #ea4c89;
+.external_link:hover {
+  animation: gradient 15s infinite;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  color: white;
+  border: 1.5px solid white;
+  border-radius: 5px;
 }
 
-.linkedin_link:hover {
-  border-color: #2867b2;
-}
-
-.linkedin_link:hover p {
-  color: #2867b2;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .external_link_subtext {
@@ -82,7 +91,7 @@ header {
 
 .post_title {
   font-size: 1.3em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .post_role {
