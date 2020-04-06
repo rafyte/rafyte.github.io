@@ -146,7 +146,7 @@ header {
   opacity: 0;
 }
 
-.post:hover .post_image--active,
-.post:hover .post_header {
+.post:hover .post_image--active/*,
+.post:hover .post_header*/ {
   opacity: 1;
 }
